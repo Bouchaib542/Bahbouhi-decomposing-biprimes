@@ -1,51 +1,58 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Factorisation des Bipremiers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goldbach's Conjecture GPS Method</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
+      margin: 2rem;
+      line-height: 1.6;
     }
-    h1 {
-      color: #333;
+    h1, h2 {
+      color: #8B0000;
     }
-    input {
-      width: 200px;
-      padding: 5px;
+    .section {
+      margin-bottom: 2rem;
     }
-    button {
-      padding: 6px 12px;
-      margin-left: 10px;
+    table {
+      border-collapse: collapse;
+      width: 100%;
     }
-    #result {
-      margin-top: 20px;
-      font-weight: bold;
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
     }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
+    th {
+      background-color: #f5f5f5;
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
+    code {
+      background-color: #eee;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
-  <h1>Factorisation des Bipremiers</h1>
-  <p>Entrez un nombre bipremier (produit de deux nombres premiers) :</p>
-  <input type="text" id="inputNumber" />
-  <button onclick="factorize()">Factoriser</button>
-  <p id="result"></p>
-
-  <footer>
-    <p><a href="about.html">À propos de cette méthode</a></p>
-  </footer>
-
-  <script src="script.js"></script>
+  <h1>Validation of Goldbach's Conjecture Using the Hybrid GPS Method</h1>  <div class="section">
+    <h2>Introduction</h2>
+    <p>The Goldbach Conjecture asserts that every even number greater than 2 can be written as the sum of two prime numbers: <code>E = p + q</code>. This conjecture, proposed in 1742, remains unproven despite centuries of computational verification and theoretical interest.</p>
+  </div>  <div class="section">
+    <h2>The GPS Hybrid Method</h2>
+    <p>The GPS (Guided Prime Search) method is an algorithmic strategy that predicts pairs <code>(p, q)</code> such that <code>p + q = E</code>. The hybrid version combines modular arithmetic insights, exponential navigation, and structural properties of primes to avoid brute force.</p>
+    <p>Given a large even number <code>E</code>, the method explores values of <code>p = E/2 - t</code> and <code>q = E/2 + t</code> such that both <code>p</code> and <code>q</code> are prime. The search is guided by theoretical filters and optimized steps based on prior tests and known patterns.</p>
+  </div>  <div class="section">
+    <h2>Record Validation</h2>
+    <p>This method has successfully validated the conjecture up to extremely large values. The archive below provides actual examples of prime pairs for values like <code>E = 10^100</code>, <code>10^500</code>, and up to <code>10^10000</code>. These results are stored, making the site act like a GPS navigator: no recalculation is needed, only data retrieval.</p>
+  </div>  <div class="section">
+    <h2>Conclusion</h2>
+    <p>The hybrid GPS method provides a new path to understanding and exploring the Goldbach Conjecture. By combining number theory, computation, and predictive strategies, we demonstrate a scalable way to navigate the conjecture beyond previously reachable limits.</p>
+    <p>Creator: Bahbouhi Bouchaib – Independent Researcher in Mathematics – Nantes, France</p>
+  </div>  <div class="section">
+    <h2>Archive of Validated Pairs</h2>
+    <p>To consult the archive of validated decompositions up to <code>10^10000</code>, see the table below:</p>
+    <a href="records.html">View Prime Decomposition Table</a>
+  </div>
 </body>
 </html>
